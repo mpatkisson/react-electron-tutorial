@@ -5,6 +5,16 @@
 </head>
 <body>
   <div id="react-root"></div>
-  <script src="./build/bundle.js"></script>
+  <script>
+  var bundlePath = './build/bundle.js',
+      ele = document.createElement('script');
+
+  if(typeof process !== 'undefined' && process.env.ENVIRONMENT === 'DEV') {
+    bundlePath = 'http://localhost:2016/build/bundle.js';
+  }
+
+  ele.src = bundlePath;
+  document.currentScript.parentNode.insertBefore(ele, document.currentScript);
+  </script>
 </body>
 </html>

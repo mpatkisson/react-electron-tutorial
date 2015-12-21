@@ -13,7 +13,8 @@
     "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
-    "start": "./node_modules/.bin/electron .",
-    "build": "./node_modules/.bin/webpack"
+    "start": "ENVIRONMENT=DEV ./node_modules/.bin/electron .",
+    "build": "./node_modules/.bin/webpack",
+    "watch": "./node_modules/.bin/webpack-dev-server --hot --inline --port 2016"
   }
 }
