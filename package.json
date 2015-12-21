@@ -6,6 +6,7 @@
     "babel-core": "^6.3.21",
     "babel-loader": "^6.2.0",
     "babel-preset-react": "^6.3.13",
+    "bootstrap-sass": "^3.3.6",
     "css-loader": "^0.18.0",
     "electron-prebuilt": "^0.36.0",
     "node-sass": "^3.4.2",
