@@ -7,7 +7,8 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/build'
+    path: __dirname + '/build',
+    publicPath: 'http://localhost:2016/build/'
   },
 
   module: {
