@@ -18,6 +18,10 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query:{ presets:['react'] }
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!sass-loader'
       }
     ]
   }
