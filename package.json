@@ -9,10 +9,12 @@
     "electron-prebuilt": "^0.36.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
-    "start": "./node_modules/.bin/electron .",
-    "build": "./node_modules/.bin/webpack"
+    "start": "ENVIRONMENT=DEV ./node_modules/.bin/electron .",
+    "build": "./node_modules/.bin/webpack",
+    "watch": "./node_modules/.bin/webpack-dev-server --hot --inline --port 2016"
   }
 }
