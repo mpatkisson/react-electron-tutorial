@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDom = require('react-dom');
 
-require('../static/styles/main.scss');
+require('../styles/main.scss');
 
 var App = React.createClass({
   render: function() {
