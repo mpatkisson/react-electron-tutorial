@@ -1,6 +1,12 @@
+'use strict';
+
 var React = require('react');
 var ReactDom = require('react-dom');
+var $ = require('jquery');
 
+window.$ = $;
+window.jQuery = $;
+require('bootstrap-sass');
 require('../styles/main.scss');
 
 var App = React.createClass({
@@ -8,7 +14,7 @@ var App = React.createClass({
     var nameStyle = {
       color: 'red'
     };
-    return <h1 className="test">Hello, <span style={nameStyle}>World</span>, from React!</h1>;
+    return <div className="alert alert-success">Hello, <span style={nameStyle}>Mike</span>, from React!</div>;
   }
 });
 
